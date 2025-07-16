@@ -13,6 +13,13 @@ Pod::Spec.new do |s|
   
     s.source_files     = "**/*.{swift,mm,h,m}"
     s.vendored_frameworks = "ActiveTrail-Push-SDK-iOS.xcframework"
+    s.pod_target_xcconfig = {
+      'DEFINES_MODULE' => 'YES',
+      'CLANG_MODULES_AUTOLINK' => 'YES'
+    }
+    s.module_map = nil
+    s.public_header_files = []
+    s.header_mappings_dir = nil
     s.requires_arc     = true
     s.swift_version    = "5.0"
   
