@@ -9,10 +9,21 @@ using namespace facebook;
 RCT_EXTERN_METHOD(init:(NSString *)apiKey
                   pushToken:(nullable NSString *)pushToken
                   enableLogs:(BOOL)enableLogs
-                  useExternalId:(BOOL)useExternalId)
+                  useExternalId:(BOOL)useExternalId
+                  withResolver:(RCTPromiseResolveBlock)resolve
+                  withRejecter:(RCTPromiseRejectBlock)reject)
 
-RCT_EXTERN_METHOD(linkUser:(NSDictionary *)user)
-RCT_EXTERN_METHOD(reportEvent:(NSString *)uuid)
-RCT_EXTERN_METHOD(setExternalData:(NSString *)id name:(NSString *)name)
+RCT_EXTERN_METHOD(linkUser:(NSDictionary *)user
+                  withResolver:(RCTPromiseResolveBlock)resolve
+                  withRejecter:(RCTPromiseRejectBlock)reject)
+
+RCT_EXTERN_METHOD(reportEvent:(NSString *)uuid
+                  withResolver:(RCTPromiseResolveBlock)resolve
+                  withRejecter:(RCTPromiseRejectBlock)reject)
+
+RCT_EXTERN_METHOD(setExternalData:(NSString *)id
+                  name:(NSString *)name
+                  withResolver:(RCTPromiseResolveBlock)resolve
+                  withRejecter:(RCTPromiseRejectBlock)reject)
 
 @end

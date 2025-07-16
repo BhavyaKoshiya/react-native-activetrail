@@ -2,7 +2,12 @@ import type { TurboModule } from 'react-native';
 import { TurboModuleRegistry } from 'react-native';
 
 export interface Spec extends TurboModule {
-  init(apiKey: string, enableLogs?: boolean): void;
+  init(
+    apiKey: string,
+    pushToken?: string,
+    enableLogs?: boolean,
+    useExternalId?: boolean
+  ): Promise<void>;
 
   linkUser(user: {
     email?: string;
@@ -10,11 +15,11 @@ export interface Spec extends TurboModule {
     firstName?: string;
     lastName?: string;
     extra?: { [key: string]: string | number };
-  }): void;
+  }): Promise<{ success: boolean }>;
 
-  reportEvent(uuid: string): void;
+  reportEvent(uuid: string): Promise<void>;
 
-  setExternalData(id: string, name: string): void;
+  setExternalData(id: string, name: string): Promise<void>;
 }
 
 export default TurboModuleRegistry.getEnforcing<Spec>('Activetrail');
