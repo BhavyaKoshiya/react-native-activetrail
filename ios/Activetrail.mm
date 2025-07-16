@@ -1,18 +1,18 @@
-#import "Activetrail.h"
+#import <React/RCTBridgeModule.h>
+#import <ReactCommon/ReactTurboModule.h>
+#import <React/RCTUtils.h>
 
-@implementation Activetrail
-RCT_EXPORT_MODULE()
+using namespace facebook;
 
-- (NSNumber *)multiply:(double)a b:(double)b {
-    NSNumber *result = @(a * b);
+@interface RCT_EXTERN_REMAP_MODULE(Activetrail, Activetrail, NSObject)
 
-    return result;
-}
+RCT_EXTERN_METHOD(init:(NSString *)apiKey
+                  pushToken:(nullable NSString *)pushToken
+                  enableLogs:(BOOL)enableLogs
+                  useExternalId:(BOOL)useExternalId)
 
-- (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
-    (const facebook::react::ObjCTurboModule::InitParams &)params
-{
-    return std::make_shared<facebook::react::NativeActivetrailSpecJSI>(params);
-}
+RCT_EXTERN_METHOD(linkUser:(NSDictionary *)user)
+RCT_EXTERN_METHOD(reportEvent:(NSString *)uuid)
+RCT_EXTERN_METHOD(setExternalData:(NSString *)id name:(NSString *)name)
 
 @end

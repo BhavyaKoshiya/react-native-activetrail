@@ -1,0 +1,93 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ActiveTrail_Push_SDK_iOS
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+@_exported import ActiveTrail_Push_SDK_iOS
+import CoreLocation
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers final public class PushSDK {
+  public static let shared: ActiveTrail_Push_SDK_iOS.PushSDK
+  final public var apiKey: Swift.String? {
+    get
+  }
+  final public func setup(apiKey: Swift.String, pushToken: Swift.String, enableLogs: Swift.Bool = false, useExternalId: Swift.Bool = false)
+  final public func setUserInfo(email: Swift.String? = nil, sms: Swift.String? = nil, extraUserInfo: [ActiveTrail_Push_SDK_iOS.UserInfoField : Any]? = nil)
+  final public func setApiKey(key: Swift.String)
+  final public func setPushToken(pushToken: Swift.String)
+  final public func setDeeplinkListener(listener: @escaping (Swift.String) -> Swift.Void)
+  final public func reportCustomEvent(eventString: Swift.String)
+  final public func didReceiveRemoteNotification(userInfo: [Swift.AnyHashable : Any])
+  final public func setExternalDataUsage(useExternalId: Swift.Bool, externalId: Swift.String? = nil, externalName: Swift.String? = nil)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class Api {
+  public static var requests: [[Swift.String : Any]]
+  @objc deinit
+}
+public enum UserInfoField : Swift.String {
+  case firstName
+  case lastName
+  case anniversary
+  case birthday
+  case fax
+  case zipCode
+  case phone1
+  case phone2
+  case street
+  case city
+  case ext1
+  case ext2
+  case ext3
+  case ext4
+  case ext5
+  case ext6
+  case ext7
+  case ext8
+  case ext9
+  case ext10
+  case ext11
+  case ext12
+  case ext13
+  case ext14
+  case ext15
+  case ext16
+  case ext17
+  case ext18
+  case ext19
+  case ext20
+  case ext21
+  case ext22
+  case ext23
+  case ext24
+  case ext25
+  case date1
+  case date2
+  case date3
+  case date4
+  case date5
+  case num1
+  case num2
+  case num3
+  case num4
+  case num5
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class LocationHelper : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate {
+  public func getLocation(completion: @escaping (Swift.String?) -> Swift.Void)
+  @objc public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: any Swift.Error)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension ActiveTrail_Push_SDK_iOS.UserInfoField : Swift.Equatable {}
+extension ActiveTrail_Push_SDK_iOS.UserInfoField : Swift.Hashable {}
+extension ActiveTrail_Push_SDK_iOS.UserInfoField : Swift.RawRepresentable {}

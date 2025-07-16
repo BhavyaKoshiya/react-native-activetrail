@@ -1,0 +1,3285 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ActiveTrail_Push_SDK_iOS",
+    "printedName": "ActiveTrail_Push_SDK_iOS",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActiveTrail_Push_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PushSDK",
+        "printedName": "PushSDK",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushSDK",
+                "printedName": "ActiveTrail_Push_SDK_iOS.PushSDK",
+                "usr": "s:24ActiveTrail_Push_SDK_iOS0cD0C"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS0cD0C6sharedACvpZ",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS0cD0C6sharedACvpZ",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PushSDK",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.PushSDK",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS0cD0C"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24ActiveTrail_Push_SDK_iOS0cD0C6sharedACvgZ",
+                "mangledName": "$s24ActiveTrail_Push_SDK_iOS0cD0C6sharedACvgZ",
+                "moduleName": "ActiveTrail_Push_SDK_iOS",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiKey",
+            "printedName": "apiKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS0cD0C6apiKeySSSgvp",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS0cD0C6apiKeySSSgvp",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "SetterAccess"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24ActiveTrail_Push_SDK_iOS0cD0C6apiKeySSSgvg",
+                "mangledName": "$s24ActiveTrail_Push_SDK_iOS0cD0C6apiKeySSSgvg",
+                "moduleName": "ActiveTrail_Push_SDK_iOS",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup(apiKey:pushToken:enableLogs:useExternalId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS0cD0C5setup6apiKey9pushToken10enableLogs13useExternalIdySS_SSS2btF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS0cD0C5setup6apiKey9pushToken10enableLogs13useExternalIdySS_SSS2btF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserInfo",
+            "printedName": "setUserInfo(email:sms:extraUserInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[ActiveTrail_Push_SDK_iOS.UserInfoField : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[ActiveTrail_Push_SDK_iOS.UserInfoField : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS0cD0C11setUserInfo5email3sms05extragH0ySSSg_AHSDyAA0gH5FieldOypGSgtF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS0cD0C11setUserInfo5email3sms05extragH0ySSSg_AHSDyAA0gH5FieldOypGSgtF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setApiKey",
+            "printedName": "setApiKey(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS0cD0C9setApiKey3keyySS_tF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS0cD0C9setApiKey3keyySS_tF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPushToken",
+            "printedName": "setPushToken(pushToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS0cD0C03setC5Token04pushG0ySS_tF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS0cD0C03setC5Token04pushG0ySS_tF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDeeplinkListener",
+            "printedName": "setDeeplinkListener(listener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS0cD0C19setDeeplinkListener8listeneryySSc_tF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS0cD0C19setDeeplinkListener8listeneryySSc_tF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reportCustomEvent",
+            "printedName": "reportCustomEvent(eventString:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS0cD0C17reportCustomEvent11eventStringySS_tF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS0cD0C17reportCustomEvent11eventStringySS_tF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceiveRemoteNotification",
+            "printedName": "didReceiveRemoteNotification(userInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS0cD0C28didReceiveRemoteNotification8userInfoySDys11AnyHashableVypG_tF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS0cD0C28didReceiveRemoteNotification8userInfoySDys11AnyHashableVypG_tF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setExternalDataUsage",
+            "printedName": "setExternalDataUsage(useExternalId:externalId:externalName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS0cD0C20setExternalDataUsage03useG2Id08externalK00L4NameySb_SSSgAHtF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS0cD0C20setExternalDataUsage03useG2Id08externalK00L4NameySb_SSSgAHtF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:24ActiveTrail_Push_SDK_iOS0cD0C",
+        "mangledName": "$s24ActiveTrail_Push_SDK_iOS0cD0C",
+        "moduleName": "ActiveTrail_Push_SDK_iOS",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActiveTrail_Push_SDK_iOS"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Api",
+        "printedName": "Api",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "requests",
+            "printedName": "requests",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[Swift.String : Any]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS3ApiC8requestsSaySDySSypGGvpZ",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS3ApiC8requestsSaySDySSypGGvpZ",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[[Swift.String : Any]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24ActiveTrail_Push_SDK_iOS3ApiC8requestsSaySDySSypGGvgZ",
+                "mangledName": "$s24ActiveTrail_Push_SDK_iOS3ApiC8requestsSaySDySSypGGvgZ",
+                "moduleName": "ActiveTrail_Push_SDK_iOS",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[[Swift.String : Any]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24ActiveTrail_Push_SDK_iOS3ApiC8requestsSaySDySSypGGvsZ",
+                "mangledName": "$s24ActiveTrail_Push_SDK_iOS3ApiC8requestsSaySDySSypGGvsZ",
+                "moduleName": "ActiveTrail_Push_SDK_iOS",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24ActiveTrail_Push_SDK_iOS3ApiC8requestsSaySDySSypGGvMZ",
+                "mangledName": "$s24ActiveTrail_Push_SDK_iOS3ApiC8requestsSaySDySSypGGvMZ",
+                "moduleName": "ActiveTrail_Push_SDK_iOS",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:24ActiveTrail_Push_SDK_iOS3ApiC",
+        "mangledName": "$s24ActiveTrail_Push_SDK_iOS3ApiC",
+        "moduleName": "ActiveTrail_Push_SDK_iOS",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActiveTrail_Push_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActiveTrail_Push_SDK_iOS"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActiveTrail_Push_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActiveTrail_Push_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserInfoField",
+        "printedName": "UserInfoField",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "firstName",
+            "printedName": "firstName",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO9firstNameyA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO9firstNameyA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "lastName",
+            "printedName": "lastName",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO8lastNameyA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO8lastNameyA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "anniversary",
+            "printedName": "anniversary",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO11anniversaryyA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO11anniversaryyA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "birthday",
+            "printedName": "birthday",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO8birthdayyA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO8birthdayyA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "fax",
+            "printedName": "fax",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO3faxyA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO3faxyA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "zipCode",
+            "printedName": "zipCode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO7zipCodeyA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO7zipCodeyA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "phone1",
+            "printedName": "phone1",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO6phone1yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO6phone1yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "phone2",
+            "printedName": "phone2",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO6phone2yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO6phone2yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "street",
+            "printedName": "street",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO6streetyA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO6streetyA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "city",
+            "printedName": "city",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4cityyA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4cityyA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext1",
+            "printedName": "ext1",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext1yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext1yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext2",
+            "printedName": "ext2",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext2yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext2yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext3",
+            "printedName": "ext3",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext3yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext3yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext4",
+            "printedName": "ext4",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext4yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext4yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext5",
+            "printedName": "ext5",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext5yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext5yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext6",
+            "printedName": "ext6",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext6yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext6yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext7",
+            "printedName": "ext7",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext7yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext7yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext8",
+            "printedName": "ext8",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext8yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext8yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext9",
+            "printedName": "ext9",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext9yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4ext9yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext10",
+            "printedName": "ext10",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext10yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext10yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext11",
+            "printedName": "ext11",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext11yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext11yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext12",
+            "printedName": "ext12",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext12yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext12yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext13",
+            "printedName": "ext13",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext13yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext13yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext14",
+            "printedName": "ext14",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext14yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext14yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext15",
+            "printedName": "ext15",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext15yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext15yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext16",
+            "printedName": "ext16",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext16yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext16yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext17",
+            "printedName": "ext17",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext17yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext17yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext18",
+            "printedName": "ext18",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext18yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext18yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext19",
+            "printedName": "ext19",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext19yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext19yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext20",
+            "printedName": "ext20",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext20yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext20yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext21",
+            "printedName": "ext21",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext21yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext21yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext22",
+            "printedName": "ext22",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext22yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext22yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext23",
+            "printedName": "ext23",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext23yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext23yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext24",
+            "printedName": "ext24",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext24yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext24yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "ext25",
+            "printedName": "ext25",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext25yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5ext25yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "date1",
+            "printedName": "date1",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5date1yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5date1yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "date2",
+            "printedName": "date2",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5date2yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5date2yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "date3",
+            "printedName": "date3",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5date3yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5date3yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "date4",
+            "printedName": "date4",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5date4yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5date4yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "date5",
+            "printedName": "date5",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5date5yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO5date5yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "num1",
+            "printedName": "num1",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4num1yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4num1yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "num2",
+            "printedName": "num2",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4num2yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4num2yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "num3",
+            "printedName": "num3",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4num3yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4num3yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "num4",
+            "printedName": "num4",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4num4yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4num4yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Var",
+            "name": "num5",
+            "printedName": "num5",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActiveTrail_Push_SDK_iOS.UserInfoField.Type) -> ActiveTrail_Push_SDK_iOS.UserInfoField",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfoField",
+                        "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4num5yA2CmF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO4num5yA2CmF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfoField",
+                    "printedName": "ActiveTrail_Push_SDK_iOS.UserInfoField",
+                    "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO8rawValueACSgSS_tcfc",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO8rawValueACSgSS_tcfc",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO8rawValueSSvp",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO8rawValueSSvp",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO8rawValueSSvg",
+                "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO8rawValueSSvg",
+                "moduleName": "ActiveTrail_Push_SDK_iOS",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:24ActiveTrail_Push_SDK_iOS13UserInfoFieldO",
+        "mangledName": "$s24ActiveTrail_Push_SDK_iOS13UserInfoFieldO",
+        "moduleName": "ActiveTrail_Push_SDK_iOS",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "ActiveTrail_Push_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActiveTrail_Push_SDK_iOS"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LocationHelper",
+        "printedName": "LocationHelper",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getLocation",
+            "printedName": "getLocation(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ActiveTrail_Push_SDK_iOS14LocationHelperC03getF010completionyySSSgc_tF",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS14LocationHelperC03getF010completionyySSSgc_tF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "locationManagerDidChangeAuthorization",
+            "printedName": "locationManagerDidChangeAuthorization(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationManager",
+                "printedName": "CoreLocation.CLLocationManager",
+                "usr": "c:objc(cs)CLLocationManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ActiveTrail_Push_SDK_iOS@objc(cs)LocationHelper(im)locationManagerDidChangeAuthorization:",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS14LocationHelperC37locationManagerDidChangeAuthorizationyySo010CLLocationI0CF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "objc_name": "locationManagerDidChangeAuthorization:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "locationManager",
+            "printedName": "locationManager(_:didUpdateLocations:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationManager",
+                "printedName": "CoreLocation.CLLocationManager",
+                "usr": "c:objc(cs)CLLocationManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreLocation.CLLocation]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLLocation",
+                    "printedName": "CoreLocation.CLLocation",
+                    "usr": "c:objc(cs)CLLocation"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ActiveTrail_Push_SDK_iOS@objc(cs)LocationHelper(im)locationManager:didUpdateLocations:",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS14LocationHelperC15locationManager_18didUpdateLocationsySo010CLLocationI0C_SaySo0M0CGtF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "objc_name": "locationManager:didUpdateLocations:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "locationManager",
+            "printedName": "locationManager(_:didFailWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationManager",
+                "printedName": "CoreLocation.CLLocationManager",
+                "usr": "c:objc(cs)CLLocationManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ActiveTrail_Push_SDK_iOS@objc(cs)LocationHelper(im)locationManager:didFailWithError:",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS14LocationHelperC15locationManager_16didFailWithErrorySo010CLLocationI0C_s0M0_ptF",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "objc_name": "locationManager:didFailWithError:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LocationHelper",
+                "printedName": "ActiveTrail_Push_SDK_iOS.LocationHelper",
+                "usr": "c:@M@ActiveTrail_Push_SDK_iOS@objc(cs)LocationHelper"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ActiveTrail_Push_SDK_iOS@objc(cs)LocationHelper(im)init",
+            "mangledName": "$s24ActiveTrail_Push_SDK_iOS14LocationHelperCACycfc",
+            "moduleName": "ActiveTrail_Push_SDK_iOS",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ActiveTrail_Push_SDK_iOS@objc(cs)LocationHelper",
+        "mangledName": "$s24ActiveTrail_Push_SDK_iOS14LocationHelperC",
+        "moduleName": "ActiveTrail_Push_SDK_iOS",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActiveTrail_Push_SDK_iOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/PushSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 278,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/PushSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 560,
+      "length": 11,
+      "value": "\"mobileApp\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/PushSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1611,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/PushSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1648,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Api.swift",
+      "kind": "BooleanLiteral",
+      "offset": 135,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Api.swift",
+      "kind": "StringLiteral",
+      "offset": 173,
+      "length": 27,
+      "value": "\"http:\/\/127.0.0.1:8000\/api\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Api.swift",
+      "kind": "StringLiteral",
+      "offset": 329,
+      "length": 47,
+      "value": "\"https:\/\/trailer.web-view.net\/PushNotification\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Api.swift",
+      "kind": "Array",
+      "offset": 1442,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/PushEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 174,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/PushEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 200,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/PushEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 241,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 72,
+      "length": 23,
+      "value": "\"Api key not provided.\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 125,
+      "length": 26,
+      "value": "\"Push token not provided.\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/Logger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 210,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 245,
+      "length": 22,
+      "value": "\"[ActiveTrailPushSDK]\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserDefaultsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 137,
+      "length": 13,
+      "value": "\"installDate\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserDefaultsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 172,
+      "length": 11,
+      "value": "\"pushToken\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserDefaultsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 200,
+      "length": 6,
+      "value": "\"uuid\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 182,
+      "length": 11,
+      "value": "\"firstname\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 214,
+      "length": 10,
+      "value": "\"lastname\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 248,
+      "length": 13,
+      "value": "\"anniversary\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 282,
+      "length": 10,
+      "value": "\"birthday\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 308,
+      "length": 5,
+      "value": "\"fax\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 333,
+      "length": 9,
+      "value": "\"zipcode\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 361,
+      "length": 8,
+      "value": "\"phone1\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 388,
+      "length": 8,
+      "value": "\"phone2\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 415,
+      "length": 8,
+      "value": "\"street\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 440,
+      "length": 6,
+      "value": "\"city\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 463,
+      "length": 6,
+      "value": "\"ext1\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 486,
+      "length": 6,
+      "value": "\"ext2\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 509,
+      "length": 6,
+      "value": "\"ext3\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 532,
+      "length": 6,
+      "value": "\"ext4\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 555,
+      "length": 6,
+      "value": "\"ext5\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 578,
+      "length": 6,
+      "value": "\"ext6\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 601,
+      "length": 6,
+      "value": "\"ext7\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 624,
+      "length": 6,
+      "value": "\"ext8\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 647,
+      "length": 6,
+      "value": "\"ext9\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 671,
+      "length": 7,
+      "value": "\"ext10\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 696,
+      "length": 7,
+      "value": "\"ext11\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 721,
+      "length": 7,
+      "value": "\"ext12\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 746,
+      "length": 7,
+      "value": "\"ext13\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 771,
+      "length": 7,
+      "value": "\"ext14\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 796,
+      "length": 7,
+      "value": "\"ext15\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 821,
+      "length": 7,
+      "value": "\"ext16\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 846,
+      "length": 7,
+      "value": "\"ext17\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 871,
+      "length": 7,
+      "value": "\"ext18\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 896,
+      "length": 7,
+      "value": "\"ext19\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 921,
+      "length": 7,
+      "value": "\"ext20\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 946,
+      "length": 7,
+      "value": "\"ext21\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 971,
+      "length": 7,
+      "value": "\"ext22\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 996,
+      "length": 7,
+      "value": "\"ext23\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 1021,
+      "length": 7,
+      "value": "\"ext24\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 1046,
+      "length": 7,
+      "value": "\"ext25\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 1071,
+      "length": 7,
+      "value": "\"date1\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 1096,
+      "length": 7,
+      "value": "\"date2\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 1121,
+      "length": 7,
+      "value": "\"date3\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 1146,
+      "length": 7,
+      "value": "\"date4\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 1171,
+      "length": 7,
+      "value": "\"date5\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 1195,
+      "length": 6,
+      "value": "\"num1\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 1218,
+      "length": 6,
+      "value": "\"num2\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 1241,
+      "length": 6,
+      "value": "\"num3\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 1264,
+      "length": 6,
+      "value": "\"num4\""
+    },
+    {
+      "filePath": "\/Users\/markkazakov\/Projects\/ActiveTrail\/ActiveTrail-Push-SDK-iOS\/ActiveTrail-Push-SDK-iOS\/Core\/UserInfoField.swift",
+      "kind": "StringLiteral",
+      "offset": 1287,
+      "length": 6,
+      "value": "\"num5\""
+    }
+  ]
+}

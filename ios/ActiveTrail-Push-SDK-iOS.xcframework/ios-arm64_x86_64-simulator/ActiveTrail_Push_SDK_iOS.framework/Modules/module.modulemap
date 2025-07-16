@@ -1,0 +1,11 @@
+framework module ActiveTrail_Push_SDK_iOS {
+  umbrella header "ActiveTrail_Push_SDK_iOS.h"
+  export *
+
+  module * { export * }
+}
+
+module ActiveTrail_Push_SDK_iOS.Swift {
+  header "ActiveTrail_Push_SDK_iOS-Swift.h"
+  requires objc
+}

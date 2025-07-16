@@ -1,6 +1,9 @@
 # Root node_modules
 node_modules/
 
+# Build output
+/build/
+
 # macOS & system files
 .DS_Store
 *.log
