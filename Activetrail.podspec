@@ -1,21 +1,27 @@
-require "json"
-
-package = JSON.parse(File.read(File.join(__dir__, "package.json")))
-
 Pod::Spec.new do |s|
-  s.name         = "Activetrail"
-  s.version      = package["version"]
-  s.summary      = package["description"]
-  s.homepage     = package["homepage"]
-  s.license      = package["license"]
-  s.authors      = package["author"]
+  s.name             = "Activetrail"
+  s.version          = "0.1.1"
+  s.summary          = "React Native wrapper for the ActiveTrail iOS SDK"
+  s.description      = <<-DESC
+                       A TurboModule-based React Native library that bridges the ActiveTrail native iOS SDK to JavaScript.
+                       DESC
+  s.homepage         = "https://activetrail.com"
+  s.license          = { :type => "MIT", :file => "../LICENSE" }
+  s.author           = { "Bhavya Koshiya" => "bhavyakoshiya555@gmail.com" }
+  s.platform         = :ios, "12.0"
+  s.source           = { :path => "." }
 
-  s.platforms    = { :ios => min_ios_version_supported }
-  s.source       = { :git => "https://github.com/BhavyaKoshiya/react-native-activetrail.git", :tag => "#{s.version}" }
+  s.source_files     = "**/*.{swift,mm,h,m}"
+  s.vendored_frameworks = "ActiveTrail-Push-SDK-iOS.xcframework"
+  s.pod_target_xcconfig = {
+    'DEFINES_MODULE' => 'YES',
+    'CLANG_MODULES_AUTOLINK' => 'YES'
+  }
+  s.module_map = nil
+  s.public_header_files = []
+  s.header_mappings_dir = nil
+  s.requires_arc     = true
+  s.swift_version    = "5.0"
 
-  s.source_files = "ios/**/*.{h,m,mm,cpp}"
-  s.private_header_files = "ios/**/*.h"
-
-
-  install_modules_dependencies(s)
+  s.dependency "React-Core"
 end
