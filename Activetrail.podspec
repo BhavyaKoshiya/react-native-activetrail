@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
   s.platform         = :ios, "12.0"
   s.source           = { :path => "." }
 
-  s.source_files     = "ios/**/*.{swift,mm,h,m}"
   s.vendored_frameworks = "ios/ActiveTrail-Push-SDK-iOS.xcframework"
   s.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES',
